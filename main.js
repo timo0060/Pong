@@ -2,7 +2,7 @@
  * Created by Tim on 4/22/2017.
  */
 var c, ctx;
-var player, ball;
+var player, ai, ball;
 var WIDTH = 1000, HEIGHT = 700;
 var codes = [];
 
@@ -25,7 +25,8 @@ function init(){
     ctx.fillRect(0, 0, WIDTH, HEIGHT);
 
     ball = new Ball(WIDTH, HEIGHT);
-    player = new Player(WIDTH, HEIGHT, "Player");
+    player = new Player(HEIGHT);
+    ai = new AI(WIDTH, player.height, player.y);
     console.log(player);
     ctx.fillStyle = "#FFFFFF";
     ctx.fillRect(player.x, player.y, player.width, player.height);
@@ -41,6 +42,8 @@ function loop(){
     ball.Move();
     ball.CheckBoundries(WIDTH, HEIGHT);
     ball.CheckPaddleCollision(player);
+    ball.CheckPaddleCollision(ai);
+    ai.move(ball);
     Draw();
 }
 
@@ -48,6 +51,8 @@ function Draw(){
     ctx.fillStyle = "#FFFFFF";
     //Draw Player
     ctx.fillRect(player.x, player.y, player.width, player.height);
+    //Draw AI
+    ctx.fillRect(ai.x, ai.y, ai.width, ai.height);
     //Draw Ball
     ctx.fillRect(ball.x, ball.y, ball.width, ball.height);
 }
