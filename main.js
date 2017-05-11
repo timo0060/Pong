@@ -6,8 +6,7 @@ var player, ai, ball;
 var WIDTH = 1000, HEIGHT = 700;
 var codes = [];
 
-window.addEventListener('keydown', this.KeyDown, false);
-window.addEventListener('keyup', this.KeyUp, false);
+window.addEventListener('mousemove', this.MovePaddle);
 
 window.onload = function(){
     init();
@@ -71,17 +70,16 @@ window.requestAnimFrame = (function(){
         };
 })();
 
-function KeyDown(e){
-    codes[e.keyCode] = true;
-    if(codes[87] || codes[38])
-        player.y -= player.speed;
-
-    if(codes[83] || codes[40])
-        player.y += player.speed;
-
-    player.CheckBoundries();
+function getMousePos(canvas, e){
+    var rect = canvas.getBoundingClientRect();
+    return {
+       x: e.clientX - rect.left,
+       y: e.clientY - rect.top
+    };
 }
 
-function KeyUp(e){
-    codes[e.keyCode] = false;
+function MovePaddle(e){
+    var mousePos = getMousePos(c, e);
+    player.y = mousePos.y - (player.height/2);
+    player.CheckBoundries();
 }
