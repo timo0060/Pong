@@ -40,8 +40,8 @@ function loop(){
     Clear();
     ball.Move();
     ball.CheckBoundries(WIDTH, HEIGHT);
-    ball.CheckPaddleCollision(player);
-    ball.CheckPaddleCollision(ai);
+    ball.CheckPaddleCollision(player, true);
+    ball.CheckPaddleCollision(ai, false);
     ai.move(ball);
     Draw();
 }
