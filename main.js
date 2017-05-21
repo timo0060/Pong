@@ -47,6 +47,7 @@ window.onload = function(){
         })
 }
 
+
 function Loop(){
     ai.SelfMovement(ball);
     ball.CheckPaddleCollision(player);
@@ -59,7 +60,6 @@ function Loop(){
             score.player ++;
     }
     ball.Move();
-
     Draw();
 }
 

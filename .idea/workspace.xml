@@ -4,9 +4,13 @@
     <list default="true" id="33cb4baf-998b-42e8-ab66-54186cdfd359" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/DrawHelper.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/obj/Ball.js" afterPath="$PROJECT_DIR$/lib/obj/Ball.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/obj/Paddle.js" afterPath="$PROJECT_DIR$/lib/obj/Paddle.js" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/obj/Ball.js" afterPath="$PROJECT_DIR$/lib/obj/Ball.js" />
+>>>>>>> refs/remotes/Pong/dev
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.js" afterPath="$PROJECT_DIR$/main.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,12 +33,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="375">
               <caret line="49" column="16" lean-forward="false" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
               <folding />
+=======
+            <state relative-caret-position="697">
+              <caret line="43" column="39" lean-forward="false" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#39#0" expanded="false" />
+              </folding>
+>>>>>>> refs/remotes/Pong/dev
             </state>
           </provider>
         </entry>
@@ -42,8 +54,13 @@
       <file leaf-file-name="DrawHelper.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/DrawHelper.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="272">
               <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+=======
+            <state relative-caret-position="289">
+              <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+>>>>>>> refs/remotes/Pong/dev
               <folding>
                 <element signature="n#!!doc;n#DrawRect#0" expanded="false" />
               </folding>
@@ -54,8 +71,13 @@
       <file leaf-file-name="Paddle.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/obj/Paddle.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="391">
               <caret line="25" column="41" lean-forward="false" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+=======
+            <state relative-caret-position="85">
+              <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+>>>>>>> refs/remotes/Pong/dev
               <folding>
                 <element signature="n#!!doc;n#Paddle#0" expanded="false" />
               </folding>
@@ -63,13 +85,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ball.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Ball.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/obj/Ball.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="340">
               <caret line="22" column="26" lean-forward="false" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
               <folding>
                 <element signature="n#!!doc;n#Ball#0" expanded="false" />
+=======
+            <state relative-caret-position="663">
+              <caret line="41" column="13" lean-forward="false" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+              <folding>
+                <element signature="n#!!doc;n#Ball#0" expanded="false" />
+                <marker date="1495384313530" expanded="true" signature="1124:1347" ph="..." />
+>>>>>>> refs/remotes/Pong/dev
               </folding>
             </state>
           </provider>
@@ -88,12 +118,16 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>name</find>
+      <find>CheckPaddleCollision</find>
     </findStrings>
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
+<<<<<<< HEAD
       <command text="git push" />
       <command text="git push Pong" />
+=======
+>>>>>>> refs/remotes/Pong/dev
       <command text="git push --set-upstream Pong dev" />
       <command text="git checkout master" />
       <command text="git checkout -b master" />
@@ -116,7 +150,13 @@
       <command text="git add --all" />
       <command text="git commit -m &quot;Add AI. Add AI Basic movement. Add Ball speed Increase&quot;" />
       <command text="git push" />
+<<<<<<< HEAD
       <command text="git commit -m &quot;Basic game steup. Draw player paddle onto screen&quot;" />
+=======
+      <command text="git add --all" />
+      <command text="git commit -m &quot;Switch from keyboard controls to Mouse controls. Plays smoother. TODO: Fix AI - Moves to fast. Fix Ball collision - If collides with top or bottom of the paddle, bounce away from it, not into it.&quot;" />
+      <command text="git push" />
+>>>>>>> refs/remotes/Pong/dev
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -129,6 +169,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/lib/obj/Player.js" />
         <option value="$PROJECT_DIR$/lib/obj/AI.js" />
         <option value="$PROJECT_DIR$/index.html" />
@@ -136,7 +177,13 @@
         <option value="$PROJECT_DIR$/lib/obj/Paddle.js" />
         <option value="$PROJECT_DIR$/lib/obj/Ball.js" />
         <option value="$PROJECT_DIR$/lib/DrawHelper.js" />
+=======
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/lib/obj/AI.js" />
+        <option value="$PROJECT_DIR$/lib/obj/Player.js" />
+>>>>>>> refs/remotes/Pong/dev
         <option value="$PROJECT_DIR$/main.js" />
+        <option value="$PROJECT_DIR$/lib/obj/Ball.js" />
       </list>
     </option>
   </component>
@@ -343,12 +390,19 @@
       <workItem from="1493175011742" duration="601000" />
       <workItem from="1493595146546" duration="61000" />
       <workItem from="1493595251162" duration="4154000" />
-      <workItem from="1494467939677" duration="1012000" />
+      <workItem from="1494467939677" duration="1131000" />
+      <workItem from="1495382416250" duration="19000" />
+      <workItem from="1495382468640" duration="1167000" />
+      <workItem from="1495384284716" duration="29000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="20848000" />
+=======
+    <option name="totallyTimeSpent" value="15361000" />
+>>>>>>> refs/remotes/Pong/dev
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -523,14 +577,163 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="43" column="39" lean-forward="false" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
-          <folding />
+<<<<<<< HEAD
+=======
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/obj/AI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc;n#AI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/obj/Player.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!doc;n#Player#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/obj/Ball.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="34" column="87" lean-forward="false" selection-start-line="34" selection-start-column="87" selection-end-line="34" selection-end-column="87" />
+          <folding>
+            <element signature="n#!!doc;n#Ball#0" expanded="false" />
+            <marker date="1495384313530" expanded="true" signature="1124:1347" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/obj/AI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc;n#AI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/obj/Player.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="16" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!doc;n#Player#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/obj/Ball.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="36" column="49" lean-forward="false" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
+          <folding>
+            <element signature="n#!!doc;n#Ball#0" expanded="false" />
+            <marker date="1495384313530" expanded="true" signature="1124:1347" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="56" column="1" lean-forward="true" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+>>>>>>> refs/remotes/Pong/dev
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/lib/obj/Ball.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
           <caret line="41" column="13" lean-forward="false" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+=======
+    <entry file="file://$PROJECT_DIR$/lib/obj/AI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc;n#AI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/obj/Player.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="16" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!doc;n#Player#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/obj/Ball.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="36" column="49" lean-forward="false" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
+          <folding>
+            <element signature="n#!!doc;n#Ball#0" expanded="false" />
+            <marker date="1495384313530" expanded="true" signature="1124:1347" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="45" column="18" lean-forward="false" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+>>>>>>> refs/remotes/Pong/dev
           <folding>
             <element signature="n#!!doc;n#Ball#0" expanded="false" />
           </folding>
@@ -569,6 +772,10 @@
           <caret line="36" column="49" lean-forward="false" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
           <folding>
             <element signature="n#!!doc;n#Ball#0" expanded="false" />
+<<<<<<< HEAD
+=======
+            <marker date="1495384313530" expanded="true" signature="1124:1347" ph="..." />
+>>>>>>> refs/remotes/Pong/dev
           </folding>
         </state>
       </provider>
@@ -613,6 +820,10 @@
           <caret line="36" column="52" lean-forward="true" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
           <folding>
             <element signature="n#!!doc;n#Ball#0" expanded="false" />
+<<<<<<< HEAD
+=======
+            <marker date="1495384313530" expanded="true" signature="1124:1347" ph="..." />
+>>>>>>> refs/remotes/Pong/dev
           </folding>
         </state>
       </provider>
@@ -649,6 +860,10 @@
           <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
           <folding>
             <element signature="n#!!doc;n#Ball#0" expanded="false" />
+<<<<<<< HEAD
+=======
+            <marker date="1495384313530" expanded="true" signature="1124:1347" ph="..." />
+>>>>>>> refs/remotes/Pong/dev
           </folding>
         </state>
       </provider>
@@ -685,6 +900,10 @@
           <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
           <folding>
             <element signature="n#!!doc;n#Ball#0" expanded="false" />
+<<<<<<< HEAD
+=======
+            <marker date="1495384313530" expanded="true" signature="1124:1347" ph="..." />
+>>>>>>> refs/remotes/Pong/dev
           </folding>
         </state>
       </provider>
@@ -721,6 +940,10 @@
           <caret line="27" column="71" lean-forward="false" selection-start-line="27" selection-start-column="71" selection-end-line="27" selection-end-column="71" />
           <folding>
             <element signature="n#!!doc;n#Ball#0" expanded="false" />
+<<<<<<< HEAD
+=======
+            <marker date="1495384313530" expanded="true" signature="1124:1347" ph="..." />
+>>>>>>> refs/remotes/Pong/dev
           </folding>
         </state>
       </provider>
@@ -747,6 +970,10 @@
           <caret line="27" column="71" lean-forward="false" selection-start-line="27" selection-start-column="71" selection-end-line="27" selection-end-column="71" />
           <folding>
             <element signature="n#!!doc;n#Ball#0" expanded="false" />
+<<<<<<< HEAD
+=======
+            <marker date="1495384313530" expanded="true" signature="1124:1347" ph="..." />
+>>>>>>> refs/remotes/Pong/dev
           </folding>
         </state>
       </provider>
@@ -802,40 +1029,76 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
           <folding />
+=======
+    <entry file="file://$PROJECT_DIR$/lib/obj/AI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc;n#AI#0" expanded="false" />
+          </folding>
+>>>>>>> refs/remotes/Pong/dev
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/obj/Ball.js">
+    <entry file="file://$PROJECT_DIR$/lib/obj/Player.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="340">
           <caret line="22" column="26" lean-forward="false" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
           <folding>
             <element signature="n#!!doc;n#Ball#0" expanded="false" />
+=======
+        <state relative-caret-position="85">
+          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!doc;n#Player#0" expanded="false" />
+>>>>>>> refs/remotes/Pong/dev
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/lib/obj/Paddle.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="25" column="41" lean-forward="false" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
           <folding>
             <element signature="n#!!doc;n#Paddle#0" expanded="false" />
+=======
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="43" column="39" lean-forward="false" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+>>>>>>> refs/remotes/Pong/dev
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/lib/DrawHelper.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
           <folding>
             <element signature="n#!!doc;n#DrawRect#0" expanded="false" />
+=======
+    <entry file="file://$PROJECT_DIR$/lib/obj/Ball.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="41" column="13" lean-forward="false" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc;n#Ball#0" expanded="false" />
+            <marker date="1495384313530" expanded="true" signature="1124:1347" ph="..." />
+>>>>>>> refs/remotes/Pong/dev
           </folding>
         </state>
       </provider>
