@@ -1,85 +1,87 @@
 /**
  * Created by Tim on 4/22/2017.
  */
-var c, ctx;
-var player, ai, ball;
-var WIDTH = 1000, HEIGHT = 700;
-var codes = [];
 
-window.addEventListener('mousemove', this.MovePaddle);
+var c;
+var cx;
 
-window.onload = function(){
-    init();
+const WIDTH = 800;
+const HEIGHT = 600;
+
+var ball = new Ball();
+var player = new Paddle(12, 100, true);
+var ai = new Paddle(12, 100, false);
+
+var score = {
+    player : 0,
+    ai : 0
 };
 
-function init(){
-   c = document.getElementById('canvas');
-   ctx = c.getContext('2d');
+function CalcMousePos(e){
+    var rect = c.getBoundingClientRect();
+    var root = document.documentElement;
+    var mouseX = e.clientX - rect.left - root.scrollLeft;
+    var mouseY = e.clientY - rect.top - root.scrollTop;
 
-   //set width and height
-    ctx.canvas.width = WIDTH;
-    ctx.canvas.height = HEIGHT;
-
-    ctx.fillStyle = "#000000";
-    ctx.fillRect(0, 0, WIDTH, HEIGHT);
-
-    ball = new Ball(WIDTH, HEIGHT);
-    player = new Player(HEIGHT);
-    ai = new AI(WIDTH, player.height, player.y);
-    console.log(player);
-    ctx.fillStyle = "#FFFFFF";
-    ctx.fillRect(player.x, player.y, player.width, player.height);
-
-    ctx.fillRect((WIDTH/2 - ball.width), (HEIGHT/2 - ball.height), ball.width, ball.height);
-
-    loop();
+    return {
+        x : mouseX,
+        y : mouseY
+    };
 }
 
-function loop(){
-    requestAnimFrame(loop);
-    Clear();
-    ball.Move();
-    ball.CheckBoundries(WIDTH, HEIGHT);
+window.onload = function(){
+    c = document.getElementById('canvas');
+    c.width = WIDTH;
+    c.height = HEIGHT;
+
+    cx = c.getContext('2d');
+    ClearScreen();
+
+    var fps = 60;
+    setInterval(Loop, 1000/fps);
+
+    canvas.addEventListener('mousemove',
+        function(evt){
+            var mousePos = CalcMousePos(evt);
+            player.pos.y = mousePos.y - (player.height/2);
+        })
+}
+
+function Loop(){
+    ai.SelfMovement(ball);
     ball.CheckPaddleCollision(player);
     ball.CheckPaddleCollision(ai);
-    ai.move(ball);
+    var collsionResult = ball.CheckBoundries(WIDTH, HEIGHT);
+    if(collsionResult.Score){
+        if(collsionResult.Side === 'LEFT')
+            score.ai ++;
+        else
+            score.player ++;
+    }
+    ball.Move();
+
     Draw();
 }
 
 function Draw(){
-    ctx.fillStyle = "#FFFFFF";
-    //Draw Player
-    ctx.fillRect(player.x, player.y, player.width, player.height);
-    //Draw AI
-    ctx.fillRect(ai.x, ai.y, ai.width, ai.height);
-    //Draw Ball
-    ctx.fillRect(ball.x, ball.y, ball.width, ball.height);
+    //CLEAR SCREEN AND DRAW BACKGROUND
+    ClearScreen();
+
+    //DRAW PLAYER
+    DrawRect(cx, player.pos.x, player.pos.y, player.width, player.height, 'white');
+
+    //DRAW AI PADDLE
+    DrawRect(cx, ai.pos.x, ai.pos.y, ai.width, ai.height, 'white');
+
+    //DRAW BALL
+    DrawCircle(cx, ball.pos.x, ball.pos.y, ball.radius, 'white');
+
 }
 
-function Clear(){
-    ctx.fillStyle = "#000000";
-    ctx.fillRect(0, 0, WIDTH, HEIGHT);
-}
+function ClearScreen(){
+    DrawRect(cx, 0, 0, WIDTH, HEIGHT, 'black');
 
-window.requestAnimFrame = (function(){
-    return  window.requestAnimationFrame       ||
-        window.webkitRequestAnimationFrame ||
-        window.mozRequestAnimationFrame    ||
-        function( callback ){
-            window.setTimeout(callback, 1000 / 60);
-        };
-})();
-
-function getMousePos(canvas, e){
-    var rect = canvas.getBoundingClientRect();
-    return {
-       x: e.clientX - rect.left,
-       y: e.clientY - rect.top
-    };
-}
-
-function MovePaddle(e){
-    var mousePos = getMousePos(c, e);
-    player.y = mousePos.y - (player.height/2);
-    player.CheckBoundries();
+    //Draw Score
+    DrawText(cx, WIDTH/3, 50, score.player, 'white', '20px Times New Roman');
+    DrawText(cx, WIDTH*0.66, 50, score.ai, 'white', '20px Times New Roman');
 }
